@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir clickhouse-driver prometheus_client requests
+RUN pip install --no-cache-dir clickhouse-driver prometheus_client requests 
 
-CMD ["python", "simulate_data_2.py"]
+CMD ["python", "simulate_data.py"]
